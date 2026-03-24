@@ -1,0 +1,90 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<style>
+    body {
+        background: linear-gradient(120deg, #4facfe, #00f2fe);
+    }
+
+    .login-container {
+        max-width: 420px;
+        margin: 80px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .login-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn-login {
+        border-radius: 10px;
+        background: linear-gradient(45deg, #4facfe, #00f2fe);
+        border: none;
+        transition: 0.3s;
+    }
+
+        .btn-login:hover {
+            opacity: 0.9;
+        }
+
+    .extra-links {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+        .extra-links a {
+            display: block;
+            margin: 5px 0;
+        }
+</style>
+
+<div class="login-container">
+    <h2 class="login-title">Đăng nhập</h2>
+
+    <form id="account" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="mb-3">
+            <label>Email</label>
+            <input asp-for="Input.Email" class="form-control" placeholder="Nhập email..." />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label>Mật khẩu</label>
+            <input asp-for="Input.Password" type="password" class="form-control" placeholder="Nhập mật khẩu..." />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" asp-for="Input.RememberMe" />
+            <label class="form-check-label" asp-for="Input.RememberMe">
+                Ghi nhớ đăng nhập
+            </label>
+        </div>
+
+        <button type="submit" class="w-100 btn btn-lg btn-login">Đăng nhập</button>
+    </form>
+
+    <div class="extra-links">
+        <a asp-page="./ForgotPassword">Quên mật khẩu?</a>
+        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Chưa có tài khoản? Đăng ký</a>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
