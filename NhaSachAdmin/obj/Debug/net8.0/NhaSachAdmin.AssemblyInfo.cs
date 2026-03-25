@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NhaSachAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+460a4751627581e9273c908e090f144b3b112e42")]
 [assembly: System.Reflection.AssemblyProductAttribute("NhaSachAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NhaSachAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

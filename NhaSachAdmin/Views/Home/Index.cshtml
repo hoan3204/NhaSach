@@ -1,9 +1,121 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang chủ";
     Layout = "_Layout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>okok</p>
+<style>
+    .hero {
+    text-align: center;
+    padding: 60px 20px;
+    }
+
+    .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    }
+
+    .hero p {
+    color: #777;
+    font-size: 18px;
+    }
+
+    .form-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .btn-custom {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 10px;
+    }
+
+    .btn-custom:hover {
+    opacity: 0.9;
+    }
+</style>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>📚 Chào mừng đến NhaSachAdmin</h1>
+    <p>Quản lý sách, người dùng và hệ thống dễ dàng</p>
+</div>
+
+<!-- FORM -->
+<div class="form-card">
+
+    <h4 class="mb-3 text-center">🔍 Tìm kiếm nhanh</h4>
+
+    <form asp-action="Index" class="row g-3 align-items-center">
+
+        <div class="col-md-5">
+            <div class="input-group">
+                @* <span class="input-group-text">@@</span> *@
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label class="visually-hidden" for="inlineFormSelectPref">Thể Loại</label>
+            <select class="form-select">
+                <option selected>Chọn Thể Loại </option>
+                <option value="1">Kinh Dị </option>
+                <option value="2">Hài</option>
+                <option value="3">Tày</option>
+                <option value="4">Độ mixi</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-custom w-100">Tìm kiếm</button>
+        </div>
+
+        <div class="col-12">
+            @* <div class="form-check mt-2"> *@
+            @*     <input class="form-check-input" type="checkbox" id="remember"> *@
+            @*     <label class="form-check-label" for="remember"> *@
+            @*         Ghi nhớ lựa chọn *@
+            @*     </label> *@
+            @* </div> *@
+        </div>
+    </form>
+</div>
+
+<div class="container mt-4 mb-5">
+    <div class="row justify-content-center">
+
+        @for (int i = 0; i < 8; i++)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+
+                    <!-- Ảnh -->
+                    <img src="https://salt.tikicdn.com/ts/product/c8/fe/46/c756d25991e756ea887b16c9e95b1a01.jpg"
+                         class="card-img-top"
+                         alt="Book">
+
+                    <!-- Nội dung -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tên sách</h5>
+                        <p class="text-muted">Mô tả ngắn...</p>
+                        <p class="text-danger fw-bold">120.000đ</p>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="card-footer text-center bg-white border-0">
+                        <a href="#" class="btn btn-primary btn-sm w-100">
+                            🛒 Thêm vào giỏ
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        }
+
+    </div>
 </div>

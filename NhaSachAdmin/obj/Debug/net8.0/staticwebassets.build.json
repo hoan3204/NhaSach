@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UeteWscK53YEtOcAH5Ac9xa18H3NpVxQBe/IeMPhVco=",
+  "Hash": "tT16O8i3F4zPL4VxKT1mH0zt+JKGXdt1Kgzevzxtfwo=",
   "Source": "NhaSachAdmin",
   "BasePath": "_content/NhaSachAdmin",
   "Mode": "Default",
@@ -1319,6 +1319,27 @@
       "OriginalItemSpec": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NhaSachAdmin.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "NhaSachAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\wwwroot\\",
+      "BasePath": "_content/NhaSachAdmin",
+      "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1gptioz3zk",
+      "Integrity": "EcieE9PSCz4ZRJ4bD9NMsa/Xtz311YjGDuvhy7EOpY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
       "Identity": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\wwwroot\\css\\site.css",
       "SourceId": "NhaSachAdmin",
       "SourceType": "Discovered",
@@ -2580,6 +2601,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/bootstrap.min.1gptioz3zk.css",
+      "AssetFile": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "234941"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EcieE9PSCz4ZRJ4bD9NMsa/Xtz311YjGDuvhy7EOpY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 08:27:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1gptioz3zk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EcieE9PSCz4ZRJ4bD9NMsa/Xtz311YjGDuvhy7EOpY8="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "234941"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EcieE9PSCz4ZRJ4bD9NMsa/Xtz311YjGDuvhy7EOpY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 08:27:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EcieE9PSCz4ZRJ4bD9NMsa/Xtz311YjGDuvhy7EOpY8="
+        }
+      ]
+    },
     {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\Users\\Hoan2\\source\\repos\\NhaSachAdmin\\NhaSachAdmin\\wwwroot\\css\\site.css",
